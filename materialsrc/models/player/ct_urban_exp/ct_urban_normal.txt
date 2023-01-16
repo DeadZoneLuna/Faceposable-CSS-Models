@@ -1,0 +1,4 @@
+"normal" "1"
+"bumpscale" "0.015"
+"nomip" "1"
+"nocompress" "1"

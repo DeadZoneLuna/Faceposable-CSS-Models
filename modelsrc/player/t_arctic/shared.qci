@@ -1,0 +1,37 @@
+$cdmaterials models\player\t_arctic
+$cdmaterials models\player\t_arctic_exp
+$cdmaterials models\player\css_shared
+$bbox -13 -13 0 13 13 72
+
+$eyeposition 0 0 73
+$mostlyopaque
+$surfaceprop "flesh"
+
+$scale 1.04
+
+// whole body
+$attachment "eyes" "ValveBiped.Bip01_Head1" 0.04 -3.75 71.45 absolute
+$attachment "mouth" "ValveBiped.Bip01_Head1" 0.80 -5.80 -0.15 rotate 0 -80 -90
+
+$model t_arctic "t_arctic_reference.smd" {
+	eyeball righteye "ValveBiped.Bip01_Head1" -1.37 -3.75 71.47 "eyeball_r" 1.00 4 "pupil_r" 0.63
+	eyeball lefteye "ValveBiped.Bip01_Head1" 1.46 -3.75 71.43 "eyeball_l" 1.00 -4 "pupil_l" 0.63
+
+	eyelid  upper_right "t_arctic_expressions" lowerer 1 -0.25 neutral 0 0.18 raiser 2 0.31 split 0.1 eyeball righteye
+	eyelid  lower_right "t_arctic_expressions" lowerer 3 -0.39 neutral 0 -0.29 raiser 4 -0.08 split 0.1 eyeball righteye
+	eyelid  upper_left "t_arctic_expressions" lowerer 1 -0.22 neutral 0 0.21 raiser 2 0.35 split -0.1 eyeball lefteye
+	eyelid  lower_left "t_arctic_expressions" lowerer 3 -0.36 neutral 0 -0.25 raiser 4 -0.05 split -0.1 eyeball lefteye
+
+	mouth 0 "mouth" "ValveBiped.Bip01_Head1" 0 1 0     // mouth illumination
+	flexfile "t_arctic_expressions" {
+		$include "../standardflex_xsi.qci"
+	}
+	$include "../facerules_xsi.qci"
+	$include "../bodyrules_xsi.qci"
+}
+
+$texturegroup skinfamilies
+{
+	{ "t_arctic"		}
+	{ "t_arctic_exp"	}
+}

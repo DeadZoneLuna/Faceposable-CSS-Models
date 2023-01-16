@@ -1,0 +1,12 @@
+"vertexlitgeneric"
+{
+	"$basetexture"				"models/player/t_phoenix_exp/t_phoenix"
+	"$envmap"					"env_cubemap"
+	"$bumpmap"					"models/player/t_phoenix_exp/t_phoenix_normal"
+	
+	"$phong"					"1"
+	"$normalmapalphaenvmapmask"	"1"
+	"$envmapcontrast"			"0.3"
+	"$envmapsaturation"			"0.7"
+	"$envmaptint"				"[ 0.01 0.01 0.01 ]"
+}

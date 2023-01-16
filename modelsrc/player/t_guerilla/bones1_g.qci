@@ -1,0 +1,52 @@
+$definebone "ValveBiped.Bip01_Pelvis" "" 0 -0.57095 41.266598 0 0 89.999982 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Thigh" "ValveBiped.Bip01_Pelvis" 4.162778 0 0 2.970156 -89.701127 -89.978726 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Calf" "ValveBiped.Bip01_L_Thigh" 19.097546 0 0 0 1.959516 0 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Foot" "ValveBiped.Bip01_L_Calf" 17.682022 0 0 -2.355088 -61.399931 -1.374869 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Toe0" "ValveBiped.Bip01_L_Foot" 7.361012 0.000001 0.000001 -0.306708 -33.481246 -0.571754 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Thigh" "ValveBiped.Bip01_Pelvis" -4.162778 0 0 2.970156 -90.299008 -90.012242 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Calf" "ValveBiped.Bip01_R_Thigh" 19.097549 0 0 0 1.959516 0 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Foot" "ValveBiped.Bip01_R_Calf" 17.68202 0 0 2.347273 -61.400143 2.425887 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Toe0" "ValveBiped.Bip01_R_Foot" 7.361015 0 -0.000001 -0.283553 -33.48141 -4.833351 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_Spine" "ValveBiped.Bip01_Pelvis" 0 3.579293 -3.190631 4.766608 89.999982 89.999982 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_Spine1" "ValveBiped.Bip01_Spine" 4.275544 0 0 0 -1.651035 0 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_Spine2" "ValveBiped.Bip01_Spine1" 3.766718 0 0 0 5.57528 0 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_Spine4" "ValveBiped.Bip01_Spine2" 9.54598 0 0 0 10.680678 0 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_Neck1" "ValveBiped.Bip01_Spine4" 3.537801 -0.000001 0 0 23.268329 179.999855 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_Head1" "ValveBiped.Bip01_Neck1" 3.854138 0 0 -0.000057 23.206684 0 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Clavicle" "ValveBiped.Bip01_Spine4" 2.203696 1.046375 2.073298 -73.711859 169.030953 91.085381 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_UpperArm" "ValveBiped.Bip01_L_Clavicle" 6.450112 -0.000002 0 2.941796 -33.277962 -82.343661 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Forearm" "ValveBiped.Bip01_L_UpperArm" 12.511031 0.000001 -0.000001 -0.000008 -3.459059 -0.000003 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Hand" "ValveBiped.Bip01_L_Forearm" 12.285388 0 -0.000035 -2.217875 2.063911 89.856507 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Finger2" "ValveBiped.Bip01_L_Hand" 4.153068 0.229722 0.428276 1.812905 -29.791038 5.025249 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Finger21" "ValveBiped.Bip01_L_Finger2" 1.839949 0.000002 0 0.286784 -20.998093 0.000012 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Finger22" "ValveBiped.Bip01_L_Finger21" 1.293821 0 0 0.160338 -12.398973 0.000011 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Finger1" "ValveBiped.Bip01_L_Hand" 4.142278 0.125644 1.391966 -1.889324 -26.576515 20.19488 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Finger11" "ValveBiped.Bip01_L_Finger1" 1.839786 0.000002 0.000001 0.292636 -20.798194 0.000033 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Finger12" "ValveBiped.Bip01_L_Finger11" 1.176635 0 -0.000001 0.186544 -13.998701 0.000035 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Finger0" "ValveBiped.Bip01_L_Hand" 0.897548 -0.321294 1.404668 -38.376685 -41.260565 -71.677528 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Finger01" "ValveBiped.Bip01_L_Finger0" 1.915068 -0.000001 0.000002 -0.123724 13.099516 -0.000017 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Finger02" "ValveBiped.Bip01_L_Finger01" 1.291492 -0.000001 0 -0.189093 20.799188 -0.000029 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Clavicle" "ValveBiped.Bip01_Spine4" 2.203695 1.046376 -2.073298 73.711859 169.030953 -95.200871 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_UpperArm" "ValveBiped.Bip01_R_Clavicle" 6.450113 0 0 -0.682165 -33.42711 87.135647 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Forearm" "ValveBiped.Bip01_R_UpperArm" 12.511032 0 -0.000002 -0.000006 -3.459061 0.000002 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Hand" "ValveBiped.Bip01_R_Forearm" 12.285415 0 0.000004 2.217399 2.063911 -89.38101 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Finger2" "ValveBiped.Bip01_R_Hand" 4.153034 0.226165 -0.430167 -2.049076 -29.776708 -5.025814 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Finger21" "ValveBiped.Bip01_R_Finger2" 1.839951 0.000001 0.000001 -0.434535 -20.995745 0.000005 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Finger22" "ValveBiped.Bip01_R_Finger21" 1.293819 -0.000001 -0.000001 -0.242992 -12.397712 0.000011 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Finger1" "ValveBiped.Bip01_R_Hand" 4.142243 0.114092 -1.39296 1.676585 -26.589341 -20.195963 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Finger11" "ValveBiped.Bip01_R_Finger1" 1.83979 -0.000001 0 -0.44329 -20.795722 -0.000001 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Finger12" "ValveBiped.Bip01_R_Finger11" 1.176639 -0.000004 -0.000001 -0.282405 -13.997117 -0.000004 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Finger0" "ValveBiped.Bip01_R_Hand" 0.897525 -0.332966 -1.401953 38.062172 -41.541026 71.507081 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Finger01" "ValveBiped.Bip01_R_Finger0" 1.915071 0 0.000001 0.187894 13.09877 0.000016 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Finger02" "ValveBiped.Bip01_R_Finger01" 1.291491 0 0.000002 0.287063 20.798092 0.000002 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Wrist" "ValveBiped.Bip01_R_Forearm" 12.285415 0 0.000004 -0.000007 0.000001 0.48759 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Wrist" "ValveBiped.Bip01_L_Forearm" 12.285416 -0.000001 -0.000001 -0.000013 0.000001 -0.057589 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Ulna" "ValveBiped.Bip01_L_Forearm" 6.142707 0 0 -0.000013 0.000001 -0.031175 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Ulna" "ValveBiped.Bip01_R_Forearm" 6.142707 0 0.000003 -0.000007 0.000001 0.263563 0 0 0 0 0 0
+$definebone "ValveBiped.Anim_Attachment_LH" "ValveBiped.Bip01_L_Hand" 2.676088 -1.712444 0 -0.000019 90.00003 90.000023 0 0 0 0 0 0
+$definebone "ValveBiped.Anim_Attachment_RH" "ValveBiped.Bip01_R_Hand" 2.676088 -1.712444 0 0 -89.999968 -89.999982 0 0 0 0 0 0
+$definebone "ValveBiped.forward" "ValveBiped.Bip01_Head1" 2.000006 -3 0 0 -76 -90.000003 0 0 0 0 0 0
+
+// the heads intended "forward" direction, independent of actual eye-nose-forward direction
+$attachment "forward" "ValveBiped.forward" 0 0 0
+

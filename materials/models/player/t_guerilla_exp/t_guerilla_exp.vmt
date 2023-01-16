@@ -1,0 +1,13 @@
+"vertexlitgeneric"
+{
+	"$basetexture"				"models/player/t_guerilla_exp/t_guerilla"
+	"$envmap"					"env_cubemap"
+	"$bumpmap"					"models/player/t_guerilla_exp/t_guerilla_normal"
+	
+	"$phong"					"1"
+	"$normalmapalphaenvmapmask"	"1"
+	"$envmapcontrast"			"0.3"
+	"$envmapsaturation"			"0.7"
+	"$envmaptint"				"[ 0.015 0.015 0.015 ]"
+	"$surfaceprop"				"flesh"
+}

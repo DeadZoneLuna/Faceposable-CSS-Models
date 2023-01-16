@@ -1,0 +1,37 @@
+$cdmaterials models\player\ct_gign
+$cdmaterials models\player\ct_gign_exp
+$cdmaterials models\player\css_shared
+$bbox -13 -13 0 13 13 72
+
+$eyeposition 0 0 73
+$opaque
+$surfaceprop "flesh"
+ 
+$scale 1.04
+
+// whole body
+$attachment "eyes" "ValveBiped.Bip01_Head1" 0.03 -4.33 71.19 absolute
+$attachment "mouth" "ValveBiped.Bip01_Head1" 0.80 -5.80 -0.15 rotate 0 -80 -90
+
+$model ct_gign "ct_gign_reference.smd"  {
+	eyeball righteye "ValveBiped.Bip01_Head1" -1.34 -4.33 71.18 "eyeball_r" 1.00 4 "pupil_r" 0.63
+	eyeball lefteye "ValveBiped.Bip01_Head1" 1.39 -4.33 71.19 "eyeball_l" 1.00 -4 "pupil_l" 0.63
+
+	eyelid  upper_right "ct_gign_expressions" lowerer 1 -0.25 neutral 0 0.09 raiser 2 0.20 split 0.1 eyeball righteye
+	eyelid  lower_right "ct_gign_expressions" lowerer 3 -0.41 neutral 0 -0.27 raiser 4 -0.14 split 0.1 eyeball righteye
+	eyelid  upper_left "ct_gign_expressions" lowerer 1 -0.25 neutral 0 0.08 raiser 2 0.19 split -0.1 eyeball lefteye
+	eyelid  lower_left "ct_gign_expressions" lowerer 3 -0.41 neutral 0 -0.28 raiser 4 -0.15 split -0.1 eyeball lefteye
+
+	mouth 0 "mouth" "ValveBiped.Bip01_Head1" 0 1 0     // mouth illumination
+	flexfile "ct_gign_expressions" {
+		$include "../standardflex_xsi.qci"
+	}
+	$include "../facerules_xsi.qci"
+	$include "../bodyrules_xsi.qci"
+}
+
+$texturegroup skinfamilies
+{
+	{ "ct_gign"		"ct_gign_glass"		}
+	{ "ct_gign_exp"	"ct_gign_glass_exp"	}
+}

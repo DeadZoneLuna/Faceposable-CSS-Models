@@ -1,0 +1,17 @@
+"GameInfo"
+{
+	game	"Real Beta"
+	gamelogo 1
+	type multiplayer_only
+
+	FileSystem
+	{
+		SteamAppId	1337
+		ToolsAppId	1337
+
+		SearchPaths
+		{
+			Game	|gameinfo_path|.
+		}
+	}
+}

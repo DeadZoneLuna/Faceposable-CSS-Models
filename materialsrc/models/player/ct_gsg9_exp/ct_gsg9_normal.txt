@@ -1,0 +1,3 @@
+"normal" "1"
+"nomip" "1"
+"nocompress" "1"

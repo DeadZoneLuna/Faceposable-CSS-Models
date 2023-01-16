@@ -1,0 +1,9 @@
+"vertexlitgeneric"
+{
+	"$basetexture"	"models/player/t_leet_exp/t_leet_glass"
+	"$envmap"		"env_cubemap"
+	"$envmapmask"	"models/player/t_leet_exp/t_leet_glass_spec"
+	
+	"$translucent"	"1"
+	"$nocull"		"1"
+}

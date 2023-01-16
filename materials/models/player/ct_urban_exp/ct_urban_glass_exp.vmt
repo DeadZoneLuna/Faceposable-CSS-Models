@@ -1,0 +1,8 @@
+"vertexlitgeneric"
+{
+	"$basetexture"	"models/player/ct_urban_exp/ct_urban_glass"
+	"$envmap"		"env_cubemap"
+	"$envmapmask"	"models/player/ct_urban_exp/ct_urban_glass_spec"
+	
+	"$translucent"	"1"
+}

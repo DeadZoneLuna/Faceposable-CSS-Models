@@ -1,0 +1,16 @@
+$attachment grenade0 "ValveBiped.grenade0" 0 0 0 rotate 0 0 0 RIGID
+$attachment grenade1 "ValveBiped.grenade1" 0 0 0 rotate 0 0 0 RIGID
+$attachment grenade2 "ValveBiped.grenade2" 0 0 0 rotate 0 0 0 RIGID
+$attachment grenade3 "ValveBiped.grenade3" 0 0 0 rotate 0 0 0 RIGID
+
+$attachment pistol "ValveBiped.pistol" 0 0 0 rotate 0 0 0 RIGID
+$attachment primary "ValveBiped.primary" 0 0 0 rotate 0 0 0 RIGID
+$attachment defusekit "ValveBiped.defusekit" 0 0 0 rotate 0 0 0 RIGID
+$attachment eholster "ValveBiped.eholster" 0 0 0 rotate 0 0 0 RIGID
+//$attachment knife "ValveBiped.knife" 0 0 0 rotate 0 0 0 RIGID
+
+$attachment "lfoot" "valvebiped.bip01_l_foot" 0.00 5.00 0.00 rotate 0 0 0 RIGID
+$attachment "rfoot" "valvebiped.bip01_r_foot" 0.00 5.00 0.00 rotate 0 0 0 RIGID
+
+$attachment "muzzle_flash" "valvebiped.bip01_l_hand" 0.00 0.00 0.00 rotate 0 0 0 RIGID
+

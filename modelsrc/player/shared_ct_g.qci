@@ -1,0 +1,12 @@
+$include "bones1_g.qci"
+
+$include "..\ruleshierarchy_g.qci"
+$include "..\ct_attachments.qci"
+$include "..\hitbox.qci"
+
+$includemodel "m_anm.mdl"
+
+$include "..\ragdoll.qci"
+
+$bonemerge "ValveBiped.Bip01_R_Hand"
+$bonemerge "ValveBiped.Bip01_L_Hand"

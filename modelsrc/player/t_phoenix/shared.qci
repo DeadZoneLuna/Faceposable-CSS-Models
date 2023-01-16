@@ -1,0 +1,37 @@
+$cdmaterials models\player\t_phoenix
+$cdmaterials models\player\t_phoenix_exp
+$cdmaterials models\player\css_shared
+$bbox -13 -13 0 13 13 72
+
+$eyeposition 0 0 73
+$opaque
+$surfaceprop "flesh" 
+ 
+$scale 1.06
+
+// whole body
+$attachment "eyes" "ValveBiped.Bip01_Head1" 0.01 -4.07 72.58 absolute
+$attachment "mouth" "ValveBiped.Bip01_Head1" 0.80 -5.80 -0.15 rotate 0 -80 -90
+
+$model t_phoenix "t_phoenix_reference.smd" {
+	eyeball righteye "ValveBiped.Bip01_Head1" -1.19 -4.07 72.58 "eyeball_r" 1.06 4 "pupil_r" 0.64
+	eyeball lefteye "ValveBiped.Bip01_Head1" 1.21 -4.07 72.57 "eyeball_l" 1.06 -4 "pupil_l" 0.64
+ 
+	eyelid  upper_right "t_phoenix_expressions" lowerer 1 -0.26 neutral 0 0.17 raiser 2 0.23 split 0.1 eyeball righteye
+	eyelid  lower_right "t_phoenix_expressions" lowerer 3 -0.36 neutral 0 -0.27 raiser 4 -0.12 split 0.1 eyeball righteye
+	eyelid  upper_left "t_phoenix_expressions" lowerer 1 -0.24 neutral 0 0.19 raiser 2 0.25 split -0.1 eyeball lefteye
+	eyelid  lower_left "t_phoenix_expressions" lowerer 3 -0.35 neutral 0 -0.26 raiser 4 -0.11 split -0.1 eyeball lefteye
+
+	mouth 0 "mouth" "ValveBiped.Bip01_Head1" 0 1 0     // mouth illumination
+	flexfile "t_phoenix_expressions" {
+		$include "../standardflex_xsi.qci"
+	}
+	$include "../facerules_xsi.qci"
+	$include "../bodyrules_xsi.qci"
+}
+
+$texturegroup skinfamilies
+{
+	{ "t_phoenix"		}
+	{ "t_phoenix_exp"	}
+}

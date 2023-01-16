@@ -1,0 +1,37 @@
+$cdmaterials models\player\t_guerilla
+$cdmaterials models\player\t_guerilla_exp
+$cdmaterials models\player\css_shared
+$bbox -13 -13 0 13 13 72
+
+$eyeposition 0 0 73
+$opaque
+$surfaceprop "flesh"
+ 
+$scale 1.07
+
+// whole body
+$attachment "eyes" "ValveBiped.Bip01_Head1" -0.02 -3.74 73.36 absolute
+$attachment "mouth" "ValveBiped.Bip01_Head1" 0.80 -5.80 -0.15 rotate 0 -80 -90
+
+$model t_guerilla "t_guerilla_reference.smd" {
+	eyeball righteye "ValveBiped.Bip01_Head1" -1.45 -3.74 73.35 "eyeball_r" 1.00 4 "pupil_r" 0.63
+	eyeball lefteye "ValveBiped.Bip01_Head1" 1.37 -3.74 73.38 "eyeball_l" 1.00 -4 "pupil_l" 0.63
+	
+	eyelid  upper_right "t_guerilla_expressions" lowerer 1 -0.14 neutral 0 0.18 raiser 2 0.36 split 0.1 eyeball righteye
+	eyelid  lower_right "t_guerilla_expressions" lowerer 3 -0.34 neutral 0 -0.18 raiser 4 -0.04 split 0.1 eyeball righteye
+	eyelid  upper_left "t_guerilla_expressions" lowerer 1 -0.17 neutral 0 0.15 raiser 2 0.33 split -0.1 eyeball lefteye
+	eyelid  lower_left "t_guerilla_expressions" lowerer 3 -0.37 neutral 0 -0.21 raiser 4 -0.07 split -0.1 eyeball lefteye
+
+	mouth 0 "mouth" "ValveBiped.Bip01_Head1" 0 1 0     // mouth illumination
+	flexfile "t_guerilla_expressions" {
+		$include "../standardflex_xsi.qci"
+	}
+	$include "../facerules_xsi.qci"
+	$include "../bodyrules_xsi.qci"
+}
+
+$texturegroup skinfamilies
+{
+	{ "t_guerilla"		}
+	{ "t_guerilla_exp"	}
+}

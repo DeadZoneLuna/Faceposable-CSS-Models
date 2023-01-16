@@ -1,0 +1,15 @@
+$include "bones1.qci"
+
+$include "..\ruleshierarchy.qci"
+$include "..\t_attachments.qci"
+$include "..\hitbox.qci"
+
+$includemodel player/cs_player_shared.mdl
+$includemodel player/ak_anims_t.mdl
+
+$include "..\ragdoll.qci"
+
+$bonemerge "ValveBiped.Bip01_R_Hand"
+$bonemerge "ValveBiped.Bip01_L_Hand"
+$bonemerge "ValveBiped.weapon_bone"
+$bonemerge "ValveBiped.weapon_bone_Clip"

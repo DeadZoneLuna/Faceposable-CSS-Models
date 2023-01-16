@@ -1,0 +1,9 @@
+"vertexlitgeneric"
+{
+	"$basetexture"	"models/player/ct_gign_exp/ct_gign_glass"
+	"$envmap"		"env_cubemap"
+	"$envmapmask"	"models/player/ct_gign_exp/ct_gign_glass_spec"
+	
+	"$translucent"	"1"
+	"$nocull"		"1"
+}
