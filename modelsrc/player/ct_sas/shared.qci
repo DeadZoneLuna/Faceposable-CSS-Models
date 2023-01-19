@@ -1,0 +1,38 @@
+$cdmaterials models\player\ct_sas
+$cdmaterials models\player\ct_sas_exp
+$cdmaterials models\player\css_shared
+$cdmaterials models\Humans\male
+$bbox -13 -13 0 13 13 72
+
+$eyeposition 0 0 73
+$opaque
+$surfaceprop "flesh"
+ 
+$scale 1.04
+
+// whole body
+$attachment "eyes" "ValveBiped.Bip01_Head1" 0.00 -3.93 71.05 absolute
+$attachment "mouth" "ValveBiped.Bip01_Head1" 0.80 -5.80 -0.15 rotate 0 -80 -90
+
+$model ct_urban "ct_sas_reference.smd" {
+	eyeball righteye "ValveBiped.Bip01_Head1" -1.32 -3.93 71.05 "eyeball_r" 1.00 4 "pupil_r" 0.63
+	eyeball lefteye "ValveBiped.Bip01_Head1" 1.32 -3.93 71.05 "eyeball_l" 1.00 -4 "pupil_l" 0.63
+
+	eyelid  upper_right "ct_sas_expressions" lowerer 1 -0.19 neutral 0 0.13 raiser 2 0.27 split 0.1 eyeball righteye
+	eyelid  lower_right "ct_sas_expressions" lowerer 3 -0.39 neutral 0 -0.31 raiser 4 -0.15 split 0.1 eyeball righteye
+	eyelid  upper_left "ct_sas_expressions" lowerer 1 -0.18 neutral 0 0.14 raiser 2 0.28 split -0.1 eyeball lefteye
+	eyelid  lower_left "ct_sas_expressions" lowerer 3 -0.38 neutral 0 -0.30 raiser 4 -0.14 split -0.1 eyeball lefteye
+
+	mouth 0 "mouth" "ValveBiped.Bip01_Head1" 0 1 0     // mouth illumination
+	flexfile "ct_sas_expressions" {
+		$include "../standardflex_xsi.qci"
+	}
+	$include "../facerules_xsi.qci"
+	$include "../bodyrules_xsi.qci"
+}
+
+$texturegroup skinfamilies
+{
+	{ "ct_sas"			"ct_sas_glass"		}
+	{ "ct_sas_exp"		"ct_sas_glass_exp"	}
+}

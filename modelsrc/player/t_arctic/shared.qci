@@ -1,6 +1,7 @@
 $cdmaterials models\player\t_arctic
 $cdmaterials models\player\t_arctic_exp
 $cdmaterials models\player\css_shared
+$cdmaterials models\Humans\male
 $bbox -13 -13 0 13 13 72
 
 $eyeposition 0 0 73

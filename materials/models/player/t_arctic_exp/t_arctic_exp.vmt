@@ -1,10 +1,10 @@
 "vertexlitgeneric"
 {
-	"$basetexture"				"models/player/t_arctic_exp/t_arctic"
+	"$basetexture"				"models/player/t_arctic/t_arctic"
 	"$envmap"					"env_cubemap"
-	"$bumpmap"					"models/player/t_arctic_exp/t_arctic_normal"
+	"$bumpmap"					"models/player/t_arctic/t_arctic_normal"
 	
-	"$phong"					"1"
+	"$halflambert"				"1"
 	"$normalmapalphaenvmapmask"	"1"
 	"$envmapcontrast"			"0.3"
 	"$envmapsaturation"			"0.7"

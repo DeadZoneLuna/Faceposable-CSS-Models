@@ -1,7 +1,0 @@
-"clamps" "1"
-"clampt" "1"
-"nolod" "1"
-"nomip" "1"
-
-srgb 1
-"nocompress" "1"

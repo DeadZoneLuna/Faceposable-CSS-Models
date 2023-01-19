@@ -1,0 +1,12 @@
+"vertexlitgeneric"
+{
+	"$baseTexture"		"models/player/ct_sas/ct_sas_glass"
+	"$envmap" 			"env_cubemap"
+	"$envmapmask"		"models/player/ct_sas/ct_sas_glass_spec"
+	
+	"$translucent"		"1"
+	"$halflambert"		"1"
+	"$envmapcontrast"	"0.3"
+	"$envmapsaturation"	"0.7"
+	"$envmaptint"		"[ 0.85 0.85 0.85 ]"
+}

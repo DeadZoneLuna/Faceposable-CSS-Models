@@ -1,9 +1,13 @@
 "vertexlitgeneric"
 {
-	"$basetexture"	"models/player/ct_gign_exp/ct_gign_glass"
-	"$envmap"		"env_cubemap"
-	"$envmapmask"	"models/player/ct_gign_exp/ct_gign_glass_spec"
+	"$basetexture"		"models/player/ct_gign/ct_gign_glass"
+	"$envmap"			"env_cubemap"
+	"$envmapmask"		"models/player/ct_gign/ct_gign_glass_spec"
 	
-	"$translucent"	"1"
-	"$nocull"		"1"
+	"$translucent"		"1"
+	"$nocull"			"1"
+	"$halflambert"		"1"
+	"$envmapcontrast"	"0.6"
+	"$envmapsaturation"	"1.4"
+	"$envmaptint"		"[ 0.72 0.72 0.72 ]"
 }
